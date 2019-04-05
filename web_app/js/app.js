@@ -11,12 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     evt.preventDefault()
 
     // this function picks out values from the event
-    const valueFinder = function(input){
-      return evt.target[input].value
-    };
+    const valueFinder = (input) => {return evt.target[input].value};
+    
     // this creates a new li element
     const listItem = document.createElement('li');
-    
+
     // this sets the text content of the new element using the form values
     listItem.textContent = `You need to buy ${valueFinder('quantity')} ${valueFinder('item')} ${valueFinder('shop')} ${valueFinder('urgency')}`;
 
