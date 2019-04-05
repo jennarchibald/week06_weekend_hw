@@ -10,11 +10,20 @@ body {
   align-items: center;
 }
 
+.list-display-wrapper {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.list-display {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
 
-input, select {
+input, select, li {
   margin: 10px;
 }
 
