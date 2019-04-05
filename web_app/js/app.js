@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const handleAddItemFormSubmit = function(evt){
     evt.preventDefault()
-    const itemToBuy = evt.target.item.value;
-    const quantityToBuy = evt.target.quantity.value;
-    const shopToGoTo = evt.target.shop.value;
 
+    const valueFinder = function(input){
+        return evt.target[input].value
+    };
 
     const listItem = document.createElement('li');
-    listItem.textContent = `You need to buy ${quantityToBuy} ${itemToBuy} from ${shopToGoTo}.`;
+    listItem.textContent = `You need to buy ${valueFinder('quantity')} ${valueFinder('item')} ${valueFinder('shop')} ${valueFinder('urgency')}`;
 
     const shoppingList = document.querySelector('.list-display');
     shoppingList.appendChild(listItem);

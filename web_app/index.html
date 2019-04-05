@@ -12,15 +12,25 @@
     <div class="add-item-form-wrapper">
       <form class="add-item-form" action="index.html" method="post">
         <label for="item">Item to Add</label>
-        <input type="text" name="item" value="">
+        <input required id="item" type="text" name="item" value="">
         <label for="quantity">How Many?</label>
-        <input type="number" name="quantity" min='1'>
+        <input id="quantity" type="number" name="quantity" min='1'>
         <label for="shop-select">Where to buy it:</label>
-        <select class="shop-select" name="shop">
-          <option value="Tesco">Tesco</option>
-          <option value="Amazon">Amazon</option>
-          <option value="the Corner Shop">Corner Shop</option>
+        <select id="shop-select" class="shop-select" name="shop">
+          <option value=""></option>
+          <option value="from Tesco">Tesco</option>
+          <option value="from Amazon">Amazon</option>
+          <option value="from the Corner Shop">Corner Shop</option>
         </select>
+        <label for="radio">When do you need it?</label>
+        <div class = "radio-wrapper">
+        <label for="today">Today</label>
+        <input id="today" type="radio" name="urgency" value="today">
+        <label for="week">In the next week</label>
+        <input id="week" type="radio" name="urgency" value="in the next week">
+        <label for="whenever">Whenever</label>
+        <input id="whenever" type="radio" name="urgency" value="when you get a chance">
+        </div>
         <input class='add-item' type="submit" name="add-item" value="Add Item">
       </form>
     </div>

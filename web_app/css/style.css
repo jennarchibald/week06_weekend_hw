@@ -3,7 +3,7 @@ body {
   background-color: #F2F0F0;
 }
 
-.add-item-form-wrapper, .list-display-wrapper, h1 {
+.add-item-form-wrapper, .add-item-form, .list-display-wrapper, h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,4 +12,12 @@ body {
 
 ul {
   list-style: none;
+}
+
+input, select {
+  margin: 10px;
+}
+
+input[type='radio'] {
+  margin: none;
 }
