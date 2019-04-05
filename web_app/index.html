@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src= ./js/app.js></script>
+  </head>
+  <body>
+    <h1>My Shopping List</h1>
+
+    <div class="add-item-form-wrapper">
+      <form class="add-item-form" action="index.html" method="post">
+        <label for="item">Item to Add</label>
+        <input type="text" name="item" value="">
+        <label for="quantity">How Many?</label>
+        <input type="number" name="quantity" min='1'>
+        <label for="shop-select">Where to buy it:</label>
+        <select class="shop-select" name="shop">
+          <option value="Tesco">Tesco</option>
+          <option value="Amazon">Amazon</option>
+          <option value="the Corner Shop">Corner Shop</option>
+        </select>
+        <input class='add-item' type="submit" name="add-item" value="Add Item">
+      </form>
+    </div>
+
+
+    <div class="list-display-wrapper">
+      <h1>Things to Buy</h1>
+        <ul class="list-display">
+
+        </ul>
+        <button id="delete-all-button" type="button" name="delete-all-button">Clear List</button>
+    </div>
+  </body>
+</html>
